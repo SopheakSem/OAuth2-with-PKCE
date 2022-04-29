@@ -5,7 +5,7 @@ export abstract class ApiConnection1Repository {
   protected client: AxiosInstance;
   constructor() {
     this.client = axios.create({
-      baseURL: 'http://localhost/server/api',
+      baseURL: 'http://localhost:8000/server/api',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',

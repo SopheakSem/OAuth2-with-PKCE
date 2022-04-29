@@ -27,7 +27,7 @@ services:
   nginx:
     image: nginx
     ports:
-      - 80:80
+      - 8000:80
     volumes:
       - ./client/dist:/var/www/app/public
       - ./server:/var/www/server
@@ -46,4 +46,4 @@ services:
       - ./docker/db/mysql/my.cnf:/etc/mysql/conf.d/my.cnf:cached
       - ./docker/db/mysql/initdb.d:/docker-entrypoint-initdb.d
     ports:
-      - 3306:3306
+      - 3307:3306

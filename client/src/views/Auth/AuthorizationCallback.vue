@@ -6,7 +6,7 @@ import { injectAuth } from '../../store/authContext';
 const pkce = new PKCE({
   client_id: '1',
   redirect_uri: location.origin + '/auth/callback',
-  token_endpoint: 'http://localhost/server/oauth/token',
+  token_endpoint: 'http://localhost:8000/server/oauth/token',
 });
 const { setTokens } = injectAuth();
 const router = useRouter();

@@ -8,7 +8,7 @@ if (!hasToken()) {
   const pkce = new PKCE({
     client_id: '1',
     redirect_uri: location.origin + '/auth/callback',
-    authorization_endpoint: 'http://localhost/server/oauth/authorize',
+    authorization_endpoint: 'http://localhost:8000/server/oauth/authorize',
     requested_scopes: '*',
   });
   location.replace(pkce.authorizeUrl());
